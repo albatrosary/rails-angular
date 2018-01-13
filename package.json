@@ -1,21 +1,32 @@
 {
   "name": "rails-angular",
   "private": true,
+  "scripts": {
+    "start": "rails s & bin/webpack-dev-server",
+    "test": "NODE_ENV=test karma start"
+  },
   "dependencies": {
     "@angular/common": "^5.2.0",
     "@angular/compiler": "^5.2.0",
     "@angular/core": "^5.2.0",
     "@angular/platform-browser": "^5.2.0",
     "@angular/platform-browser-dynamic": "^5.2.0",
-    "@rails/webpacker": "^3.2.0",
-    "coffeescript": "1.12.7",
     "core-js": "^2.5.3",
     "rxjs": "^5.5.6",
-    "ts-loader": "^3.2.0",
-    "typescript": "^2.6.2",
     "zone.js": "^0.8.20"
   },
   "devDependencies": {
+    "@rails/webpacker": "^3.2.0",
+    "coffeescript": "1.12.7",
+    "karma": "^1.7.1",
+    "karma-webpack": "^2.0.4",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-jquery": "^0.2.2",
+    "karma-jasmine": "^1.1.0",
+    "karma-jasmine-jquery": "^0.1.1",
+    "jasmine-core": "^2.8.0",
+    "ts-loader": "^3.2.0",
+    "typescript": "^2.6.2",
     "webpack-dev-server": "^2.10.1"
   }
 }
